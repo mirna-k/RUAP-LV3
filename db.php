@@ -1,8 +1,8 @@
 <?php
- $host = "ruapdbserver.mysql.database.azure.com";
- $user = "ruapUser@ruapdbserver";
- $pwd = "Ruap1234";
- $db = "ruapdb";
+$host = "krpicwebapp-server.mysql.database.azure.com";
+$user = "hirguucyqc";
+$pwd = "1J5RA4CV2V82H87G$";
+$db = "krpicwebapp-database";
  // $host = "127.0.0.1:52932";
  // $user = "azure";
  // $pwd = "6#vWHD_$";
@@ -16,12 +16,7 @@
  else {
  echo 'Connected successfully';
  }
- $sql = 'CREATE Database ruapdb';
- if ($conn->query($sql) === TRUE) {
- echo "Database created successfully";
- } else {
- echo "Error creating database: " . $conn->error;
- }
+
  mysqli_select_db($conn,$db);
  $sql_create = "CREATE TABLE registration_tbl(id INT NOT NULL
  AUTO_INCREMENT, PRIMARY KEY(id), name VARCHAR(30), email
